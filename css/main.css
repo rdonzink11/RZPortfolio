@@ -14,14 +14,14 @@
   .menu-btn.close {
     transform: Rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      background: #eece1a;
+      background: #ece123;
       transform: rotate(45deg) translate(5px, 5px);
       transition-duration: 0.5s; }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0;
       transition-duration: 0.5s; }
     .menu-btn.close .btn-line:nth-child(3) {
-      background: #eece1a;
+      background: #ece123;
       transform: rotate(-45deg) translate(6.5px, -6.5px);
       transition-duration: 0.5s; }
 
@@ -45,14 +45,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #484848;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #555;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -62,14 +62,14 @@
       width: 270px;
       background: url(/dist/img/2x2.jpg);
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #ece123; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #ece123; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -82,7 +82,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a;
+      color: #ece123;
       transition: all 0.5s ease-out; }
 
 .nav-item:nth-child(1) {
@@ -100,10 +100,13 @@
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+      main .lg-heading .icon {
+        align-items: center; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -122,7 +125,7 @@
     height: 30vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(/dist/img/1x1.jpg);
+      background: url(/dist/img/1x1.png);
       width: 150px;
       height: 150px; }
   main#About {
@@ -145,21 +148,23 @@
       flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
+  main#home {
+    margin-top: 5vh;
+    align-items: center;
+    text-align: center; } }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #555;
   color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/dist/img/Laptop.jpg);
+    background: url(/dist/img/Laptop.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -171,7 +176,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.7); }
+      background: rgba(85, 85, 85, 0.7); }
 
 h1,
 h2,
@@ -187,7 +192,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5);
+    background: rgba(90, 90, 90, 0.5);
     background-size: auto; }
 
 a {
@@ -202,11 +207,11 @@ header {
 a {
   padding: 0.4rem; }
   a:hover {
-    color: #eece1a;
+    color: #ece123;
     transition: all 0.5s ease-out; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #ece123; }
 
 main {
   padding: 4rem;
@@ -221,13 +226,13 @@ main {
   grid-template-columns: repeat(3, 1fr); }
 
 .company {
-  color: #eece1a; }
+  color: #ece123; }
 
 .bio-image {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid; }
+  border: #ece123 3px solid; }
 
 .bio {
   grid-area: bio;
@@ -235,42 +240,42 @@ main {
 
 .job-1 {
   grid-area: job1;
-  background: #2b2b2b;
+  background: #3c3c3c;
   padding: 0.5rem;
-  border-bottom: #eece1a 3px solid; }
+  border-bottom: #ece123 3px solid; }
 
 .job-2 {
   grid-area: job2;
-  background: #2b2b2b;
+  background: #3c3c3c;
   padding: 0.5rem;
-  border-bottom: #eece1a 3px solid; }
+  border-bottom: #ece123 3px solid; }
 
 .job-3 {
   grid-area: job3;
-  background: #2b2b2b;
+  background: #3c3c3c;
   padding: 0.5rem;
-  border-bottom: #eece1a 3px solid; }
+  border-bottom: #ece123 3px solid; }
 
 .main-footer {
   text-align: center;
   padding: 1;
-  background: #2b2b2b;
-  color: set-text-color #444; }
+  background: #3c3c3c;
+  color: set-text-color #555; }
 
 .contact-1 {
   grid-area: job1;
-  background: #2b2b2b;
+  background: #3c3c3c;
   padding: 0.5rem;
-  border-bottom: #eece1a 3px solid; }
+  border-bottom: #ece123 3px solid; }
 
 .contact-2 {
   grid-area: job2;
-  background: #2b2b2b;
+  background: #3c3c3c;
   padding: 0.5rem;
-  border-bottom: #eece1a 3px solid; }
+  border-bottom: #ece123 3px solid; }
 
 .contact-3 {
   grid-area: job3;
-  background: #2b2b2b;
+  background: #3c3c3c;
   padding: 0.5rem;
-  border-bottom: #eece1a 3px solid; }
+  border-bottom: #ece123 3px solid; }
