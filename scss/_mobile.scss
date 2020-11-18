@@ -1,0 +1,88 @@
+//widescreen
+@include mediaXl {
+}
+// Desktop and laptop
+@include mediaLg {
+}
+
+// Tablets
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+
+      .icon {
+        align-items: center;
+      }
+    }
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+    padding-bottom: 2rem;
+    margin-bottom: auto;
+  }
+  .menu-branding {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url(/dist/img/1x1.png);
+      width: 150px;
+      height: 150px;
+    }
+  }
+  main#About {
+    align-items: center;
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  main#contact {
+    align-items: center;
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  main#My-work {
+    align-items: center;
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+// Smartphone
+@include mediaSm {
+  main#home {
+    margin-top: 5vh;
+    align-items: center;
+    text-align: center;
+  }
+}
